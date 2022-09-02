@@ -19,7 +19,7 @@ function playerOne() {
         
         if (!$(this).hasClass("usedSquare") && player == 1) {
             var clickedSquare = $(this).attr("class").slice(3, 10);
-            var clickAudio = new Audio("/audio/pop1.wav");
+            var clickAudio = new Audio("audio/pop1.wav");
             clickAudio.play();
             $("."+clickedSquare).addClass("x-square");
             playerOneSquares.push(clickedSquare[clickedSquare.length - 1])
@@ -29,12 +29,12 @@ function playerOne() {
             numberOfUsedSquares++;
             if(checkWin(playerOneSquares)) {
                 $(".title").text("Player 1 is the Winner!")
-                var audio = new Audio ("/audio/win.wav");
+                var audio = new Audio ("audio/win.wav");
                 audio.play();
                 stop();
             } else if (numberOfUsedSquares == 9){
                 $("h1").addClass("turn").text("Tied!")
-                var audio = new Audio ("/audio/draw.wav");
+                var audio = new Audio ("audio/draw.wav");
                 audio.play();
                 stop();
     
@@ -63,12 +63,12 @@ function playerTwo() {
             numberOfUsedSquares++;
             if(checkWin(playerTwoSquares)) {
                 $(".title").text("Player 2 is the Winner!")
-                var audio = new Audio ("/audio/win.wav");
+                var audio = new Audio ("audio/win.wav");
                 audio.play();
                 stop();
             } else if (numberOfUsedSquares == 9){
                 $("h1").addClass("turn").text("Tied!")
-                var audio = new Audio ("/audio/draw.wav");
+                var audio = new Audio ("audio/draw.wav");
                 audio.play();
                 stop();
             }  else {
