@@ -179,5 +179,8 @@ h1 {
   @media (max-width: 660px) {
     .row {
         height: 15vh;
-    }    
+    }
+      .footer {
+        font-size: 0.7em;
+      }
 }
