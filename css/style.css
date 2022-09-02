@@ -72,10 +72,10 @@ h1 {
 }
 
 .x-square {
-    background: rgb(201, 245, 201) no-repeat center/contain url("img/x.png");
+    background: rgb(201, 245, 201) no-repeat center/contain url("../img/x.png");
 }
 .circle-square {
-    background: rgb(201, 245, 201) no-repeat center/contain url("img/circle.png");
+    background: rgb(201, 245, 201) no-repeat center/contain url("../img/circle.png");
 }
 .usedSquare {
     background-color: rgb(189, 219, 189);
