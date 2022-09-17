@@ -33,8 +33,9 @@ function playerOne() {
                 audio.play();
                 stop();
             } else if (numberOfUsedSquares == 9){
-                $(".title").addClass("turn").text("Tied!")
-                var audio = new Audio ("audio/draw.wav");
+                $(".title").addClass("turn").text("Tied!");
+                $(".lady").addClass("turn");
+                var audio = new Audio ("audio/draw.mp3");
                 audio.play();
                 stop();
     
@@ -67,8 +68,9 @@ function playerTwo() {
                 audio.play();
                 stop();
             } else if (numberOfUsedSquares == 9){
-                $(".title").addClass("turn").text("Tied!")
-                var audio = new Audio ("audio/draw.wav");
+                $(".title").addClass("turn").text("Tied!");
+                $(".lady").addClass("turn");
+                var audio = new Audio ("audio/draw.mp3");
                 audio.play();
                 stop();
             }  else {
@@ -111,6 +113,7 @@ function stop() {
 function reset() {
     $(".sq").removeClass("x-square circle-square usedSquare");
     $(".title").text("Tic Tac Toe Online");
+    $(".lady").removeClass("turn");
     $(".player-2").removeClass("turn");
     playerOneSquares = [];
     playerTwoSquares = [];
