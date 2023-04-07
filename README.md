@@ -12,7 +12,7 @@ Click [here](https://misalima.github.io/tic-tac-toe/) to check it out.
 
 For this project I tried to come up with the javascript logic by myself, so there might be better ways to implement it. 
 
->> Sounds are played for each move, win and draw. 
->> It's playable on mobile too.
+- Sounds are played for each move, win and draw. 
+- It's playable on mobile too.
 
 It was the first project that I made on my own. 😊
